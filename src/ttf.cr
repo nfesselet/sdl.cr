@@ -29,8 +29,8 @@ module SDL
         BLENDED_WRAPPED
       end
 
-      def self.open(path)
-        font = new(path)
+      def self.open(path, point_size = 16, index = nil)
+        font = new(path, point_size, index)
         begin
           yield font
         ensure
