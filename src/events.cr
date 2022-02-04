@@ -127,7 +127,7 @@ module SDL
         @event.jaxis
       end
 
-      delegate which, x, y, to: _event
+      delegate which, axis, value, to: _event
     end
 
     struct JoyBall < Event
